@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Cheat Sheet - Media & Images</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>HTML Media & Images (Tips 41–50)</h1>
+
+  <details>
+    <summary>41. Alt Attribute</summary>
+    <pre>
+&lt;img src="dog.jpg" alt="A happy brown dog"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Provides alternative text for accessibility and SEO. Essential for screen readers.</p>
+  </details>
+
+  <details>
+    <summary>42. Title Attribute on Images</summary>
+    <pre>
+&lt;img src="sunset.jpg" alt="Sunset" title="Beautiful sunset at the beach"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Adds a tooltip on hover with extra description.</p>
+  </details>
+
+  <details>
+    <summary>43. Srcset for Responsive Images</summary>
+    <pre>
+&lt;img src="small.jpg" 
+     srcset="medium.jpg 600w, large.jpg 1200w" 
+     alt="Mountains"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Serves different image sizes based on screen width for better performance.</p>
+  </details>
+
+  <details>
+    <summary>44. Sizes with Srcset</summary>
+    <pre>
+&lt;img src="default.jpg" 
+     srcset="img-480.jpg 480w, img-800.jpg 800w" 
+     sizes="(max-width: 600px) 480px, 800px" 
+     alt="Responsive image"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Helps the browser pick the right image size depending on device resolution.</p>
+  </details>
+
+  <details>
+    <summary>45. Picture Element</summary>
+    <pre>
+&lt;picture&gt;
+  &lt;source srcset="image.webp" type="image/webp"&gt;
+  &lt;source srcset="image.jpg" type="image/jpeg"&gt;
+  &lt;img src="fallback.jpg" alt="Scenic view"&gt;
+&lt;/picture&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Lets you serve different image formats (WebP, JPG) for performance.</p>
+  </details>
+
+  <details>
+    <summary>46. Lazy Loading</summary>
+    <pre>
+&lt;img src="big-photo.jpg" alt="Landscape" loading="lazy"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Defers loading off-screen images until needed, improving page speed.</p>
+  </details>
+
+  <details>
+    <summary>47. Decoding Async</summary>
+    <pre>
+&lt;img src="photo.jpg" alt="Fast loading" decoding="async"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Improves performance by letting the browser decode images asynchronously.</p>
+  </details>
+
+  <details>
+    <summary>48. Width & Height Attributes</summary>
+    <pre>
+&lt;img src="banner.jpg" width="600" height="300" alt="Banner"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Prevents layout shifts by reserving space for images before they load.</p>
+  </details>
+
+  <details>
+    <summary>49. Figure & Figcaption</summary>
+    <pre>
+&lt;figure&gt;
+  &lt;img src="art.jpg" alt="Artwork"&gt;
+  &lt;figcaption&gt;Modern abstract painting&lt;/figcaption&gt;
+&lt;/figure&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Groups images with captions for semantic meaning.</p>
+  </details>
+
+  <details>
+    <summary>50. Inline SVG</summary>
+    <pre>
+&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" stroke="blue" stroke-width="3" fill="lightblue" /&gt;
+&lt;/svg&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Scales without quality loss and allows styling/animation with CSS.</p>
+  </details>
+
+</body>
+</html>

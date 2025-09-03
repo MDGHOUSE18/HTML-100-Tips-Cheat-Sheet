@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Cheat Sheet - Tables</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>HTML Tables (Tips 61–70)</h1>
+
+  <details>
+    <summary>61. Table Caption</summary>
+    <pre>
+&lt;table&gt;
+  &lt;caption&gt;Monthly Sales&lt;/caption&gt;
+  &lt;tr&gt;&lt;th&gt;Month&lt;/th&gt;&lt;th&gt;Sales&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;January&lt;/td&gt;&lt;td&gt;$500&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Adds a title/description for a table, improving accessibility.</p>
+  </details>
+
+  <details>
+    <summary>62. Thead, Tbody, Tfoot</summary>
+    <pre>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Product&lt;/th&gt;&lt;th&gt;Price&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Apple&lt;/td&gt;&lt;td&gt;$1&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;td&gt;$1&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Separates table header, body, and footer for clarity and accessibility.</p>
+  </details>
+
+  <details>
+    <summary>63. Column Headers with Scope="col"</summary>
+    <pre>
+&lt;th scope="col"&gt;Name&lt;/th&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Defines column headers for screen readers.</p>
+  </details>
+
+  <details>
+    <summary>64. Row Headers with Scope="row"</summary>
+    <pre>
+&lt;tr&gt;&lt;th scope="row"&gt;Apples&lt;/th&gt;&lt;td&gt;$2&lt;/td&gt;&lt;/tr&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Defines row headers to help with accessibility.</p>
+  </details>
+
+  <details>
+    <summary>65. Colspan</summary>
+    <pre>
+&lt;td colspan="2"&gt;Merged Cell&lt;/td&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Merges multiple columns into one cell.</p>
+  </details>
+
+  <details>
+    <summary>66. Rowspan</summary>
+    <pre>
+&lt;td rowspan="2"&gt;Merged Row&lt;/td&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Merges multiple rows into one cell.</p>
+  </details>
+
+  <details>
+    <summary>67. Colgroup & Col Styling</summary>
+    <pre>
+&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col style="background:#f0f0f0;"&gt;
+    &lt;col style="background:#e0f7fa;"&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;B&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Styles entire columns at once.</p>
+  </details>
+
+  <details>
+    <summary>68. Responsive Tables with Overflow</summary>
+    <pre>
+&lt;div style="overflow-x:auto;"&gt;
+  &lt;table&gt;
+    &lt;tr&gt;&lt;th&gt;Item&lt;/th&gt;&lt;th&gt;Details&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Laptop&lt;/td&gt;&lt;td&gt;15-inch&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Prevents tables from breaking layouts on small screens.</p>
+  </details>
+
+  <details>
+    <summary>69. ARIA Grid Role</summary>
+    <pre>
+&lt;table role="grid"&gt;
+  &lt;tr&gt;&lt;td&gt;Cell 1&lt;/td&gt;&lt;td&gt;Cell 2&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Helps assistive tech understand table layout as a grid.</p>
+  </details>
+
+  <details>
+    <summary>70. ARIA Sort Attribute</summary>
+    <pre>
+&lt;th aria-sort="ascending"&gt;Name&lt;/th&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Indicates if a column is sorted (ascending/descending) for accessibility.</p>
+  </details>
+
+</body>
+</html>

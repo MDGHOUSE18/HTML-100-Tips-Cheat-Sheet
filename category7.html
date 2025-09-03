@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Cheat Sheet - Accessibility & ARIA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>HTML Accessibility & ARIA (Tips 71–80)</h1>
+
+  <details>
+    <summary>71. ARIA Label</summary>
+    <pre>
+&lt;button aria-label="Close menu"&gt;✖&lt;/button&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Provides an accessible label for elements without visible text.</p>
+  </details>
+
+  <details>
+    <summary>72. ARIA Hidden</summary>
+    <pre>
+&lt;div aria-hidden="true"&gt;Invisible to screen readers&lt;/div&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Hides decorative or redundant elements from assistive technologies.</p>
+  </details>
+
+  <details>
+    <summary>73. Role Attribute</summary>
+    <pre>
+&lt;div role="alert"&gt;Error occurred!&lt;/div&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Defines an element’s role (e.g., alert, button, navigation) for accessibility.</p>
+  </details>
+
+  <details>
+    <summary>74. ARIA Live Region</summary>
+    <pre>
+&lt;div aria-live="polite"&gt;Status updates here&lt;/div&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Announces changes dynamically to screen readers (chat messages, status updates).</p>
+  </details>
+
+  <details>
+    <summary>75. Tabindex</summary>
+    <pre>
+&lt;div tabindex="0"&gt;Focusable Div&lt;/div&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Makes non-interactive elements focusable with keyboard navigation.</p>
+  </details>
+
+  <details>
+    <summary>76. Skip to Content Link</summary>
+    <pre>
+&lt;a href="#main" class="skip-link"&gt;Skip to content&lt;/a&gt;
+&lt;main id="main"&gt;Main section&lt;/main&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Improves navigation for keyboard and screen reader users.</p>
+  </details>
+
+  <details>
+    <summary>77. Fieldset & Legend in Forms</summary>
+    <pre>
+&lt;fieldset&gt;
+  &lt;legend&gt;Payment Method&lt;/legend&gt;
+  &lt;input type="radio" name="pay" id="card"&gt; &lt;label for="card"&gt;Card&lt;/label&gt;
+  &lt;input type="radio" name="pay" id="paypal"&gt; &lt;label for="paypal"&gt;PayPal&lt;/label&gt;
+&lt;/fieldset&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Groups related form controls with accessible labels.</p>
+  </details>
+
+  <details>
+    <summary>78. Label with For Attribute</summary>
+    <pre>
+&lt;label for="username"&gt;Username&lt;/label&gt;
+&lt;input type="text" id="username"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Explicitly associates labels with form controls for accessibility.</p>
+  </details>
+
+  <details>
+    <summary>79. ARIA Expanded</summary>
+    <pre>
+&lt;button aria-expanded="false" aria-controls="menu"&gt;Menu&lt;/button&gt;
+&lt;ul id="menu" hidden&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Indicates whether expandable content (dropdowns, accordions) is open or closed.</p>
+  </details>
+
+  <details>
+    <summary>80. ARIA Describedby</summary>
+    <pre>
+&lt;input type="text" id="email" aria-describedby="emailHelp"&gt;
+&lt;small id="emailHelp"&gt;We'll never share your email.&lt;/small&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Links additional descriptions or instructions to a form field.</p>
+  </details>
+
+</body>
+</html>

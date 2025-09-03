@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Cheat Sheet - Links & Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>HTML Links & Navigation (Tips 51–60)</h1>
+
+  <details>
+    <summary>51. Open in New Tab (Secure)</summary>
+    <pre>
+&lt;a href="https://example.com" target="_blank" rel="noopener"&gt;Visit Example&lt;/a&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Opens link in a new tab while preventing security risks from <code>window.opener</code>.</p>
+  </details>
+
+  <details>
+    <summary>52. Download Attribute</summary>
+    <pre>
+&lt;a href="report.pdf" download&gt;Download Report&lt;/a&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Forces file download instead of opening it in the browser.</p>
+  </details>
+
+  <details>
+    <summary>53. Nofollow Links</summary>
+    <pre>
+&lt;a href="https://example.com" rel="nofollow"&gt;External Link&lt;/a&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Tells search engines not to pass SEO authority to the linked page.</p>
+  </details>
+
+  <details>
+    <summary>54. Noopener Noreferrer</summary>
+    <pre>
+&lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Safe Link&lt;/a&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Improves security and privacy for external links.</p>
+  </details>
+
+  <details>
+    <summary>55. Anchor IDs (Internal Links)</summary>
+    <pre>
+&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;
+&lt;h2 id="section1"&gt;Section 1&lt;/h2&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Jumps to specific parts of the same page, great for long content.</p>
+  </details>
+
+  <details>
+    <summary>56. Skip Links (Accessibility)</summary>
+    <pre>
+&lt;a href="#main"&gt;Skip to Content&lt;/a&gt;
+&lt;main id="main"&gt;Main content here&lt;/main&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Lets screen reader and keyboard users skip repetitive menus.</p>
+  </details>
+
+  <details>
+    <summary>57. Accesskey Attribute</summary>
+    <pre>
+&lt;a href="/help" accesskey="h"&gt;Help&lt;/a&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Creates keyboard shortcuts for navigation links.</p>
+  </details>
+
+  <details>
+    <summary>58. Navigation Role</summary>
+    <pre>
+&lt;nav role="navigation"&gt;
+  &lt;a href="/"&gt;Home&lt;/a&gt;
+  &lt;a href="/about"&gt;About&lt;/a&gt;
+&lt;/nav&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Defines navigation region for assistive technologies.</p>
+  </details>
+
+  <details>
+    <summary>59. Breadcrumb Navigation</summary>
+    <pre>
+&lt;nav aria-label="breadcrumb"&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/articles"&gt;Articles&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Current Article&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Improves navigation and SEO, especially for deep sites.</p>
+  </details>
+
+  <details>
+    <summary>60. Link Prefetching</summary>
+    <pre>
+&lt;link rel="prefetch" href="/next-page.html"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Loads resources in advance, making navigation faster.</p>
+  </details>
+
+</body>
+</html>

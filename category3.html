@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Cheat Sheet - Forms & Inputs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>HTML Forms & Inputs (Tips 21–40)</h1>
+
+  <details>
+    <summary>21. Placeholder</summary>
+    <pre>
+&lt;input type="text" placeholder="Enter your name"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Provides a hint inside the input field until the user types.</p>
+  </details>
+
+  <details>
+    <summary>22. Required Fields</summary>
+    <pre>
+&lt;input type="email" required&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Ensures the field must be filled before submitting the form.</p>
+  </details>
+
+  <details>
+    <summary>23. Pattern Validation</summary>
+    <pre>
+&lt;input type="text" pattern="[0-9]{3}-[0-9]{3}" placeholder="123-456"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Validates input using regex. Great for phone numbers, zip codes, etc.</p>
+  </details>
+
+  <details>
+    <summary>24. Email Input</summary>
+    <pre>
+&lt;input type="email"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Browser validates for proper email format automatically.</p>
+  </details>
+
+  <details>
+    <summary>25. Telephone Input</summary>
+    <pre>
+&lt;input type="tel"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Opens numeric keypad on mobile devices for easier phone input.</p>
+  </details>
+
+  <details>
+    <summary>26. URL Input</summary>
+    <pre>
+&lt;input type="url"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Ensures a valid URL is entered.</p>
+  </details>
+
+  <details>
+    <summary>27. Number Input with Min/Max</summary>
+    <pre>
+&lt;input type="number" min="1" max="10"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Restricts input to a numeric range.</p>
+  </details>
+
+  <details>
+    <summary>28. Step Attribute</summary>
+    <pre>
+&lt;input type="number" step="0.01"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Controls step size for numeric inputs (useful for currency or decimals).</p>
+  </details>
+
+  <details>
+    <summary>29. Autofocus</summary>
+    <pre>
+&lt;input type="text" autofocus&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Automatically focuses on this input when the page loads.</p>
+  </details>
+
+  <details>
+    <summary>30. Autocomplete Off</summary>
+    <pre>
+&lt;input type="password" autocomplete="off"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Disables browser suggestions, useful for sensitive inputs.</p>
+  </details>
+
+  <details>
+    <summary>31. Readonly</summary>
+    <pre>
+&lt;input type="text" value="You cannot edit this" readonly&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Field is visible and selectable but cannot be changed.</p>
+  </details>
+
+  <details>
+    <summary>32. Disabled</summary>
+    <pre>
+&lt;input type="text" value="Disabled field" disabled&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Field is completely inactive and skipped when submitting.</p>
+  </details>
+
+  <details>
+    <summary>33. Multiple Files</summary>
+    <pre>
+&lt;input type="file" multiple&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Allows users to upload more than one file.</p>
+  </details>
+
+  <details>
+    <summary>34. Size Attribute</summary>
+    <pre>
+&lt;input type="text" size="40"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Controls the visible width of an input field.</p>
+  </details>
+
+  <details>
+    <summary>35. Datalist Suggestions</summary>
+    <pre>
+&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+  &lt;option value="Chrome"&gt;
+  &lt;option value="Firefox"&gt;
+  &lt;option value="Safari"&gt;
+&lt;/datalist&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Provides predefined suggestions as the user types.</p>
+  </details>
+
+  <details>
+    <summary>36. Form Attribute</summary>
+    <pre>
+&lt;form id="signup"&gt;&lt;/form&gt;
+&lt;input type="text" form="signup"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Links inputs to a form even if placed outside the form tag.</p>
+  </details>
+
+  <details>
+    <summary>37. Novalidate</summary>
+    <pre>
+&lt;form novalidate&gt;
+  &lt;input type="email"&gt;
+&lt;/form&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Disables browser validation (useful when handling validation with JavaScript).</p>
+  </details>
+
+  <details>
+    <summary>38. Spellcheck</summary>
+    <pre>
+&lt;textarea spellcheck="true"&gt;&lt;/textarea&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Enables browser spell checking for text fields.</p>
+  </details>
+
+  <details>
+    <summary>39. Inputmode</summary>
+    <pre>
+&lt;input type="text" inputmode="numeric"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Optimizes the mobile keyboard (numeric, decimal, email, etc.).</p>
+  </details>
+
+  <details>
+    <summary>40. Label For Accessibility</summary>
+    <pre>
+&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email"&gt;
+    </pre>
+    <p><strong>When/Why:</strong> Improves accessibility by linking label text to its input field.</p>
+  </details>
+
+</body>
+</html>
